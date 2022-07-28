@@ -1,0 +1,37 @@
+.frame-grid {
+    display: grid;
+    margin:0 auto;
+    border: 1px solid #ccc;
+    .frame-grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background-color: #ddd;
+            cursor: pointer;
+            img {
+                cursor: default;
+            }
+        }
+    }
+    &.gap {
+        border: none;
+        grid-gap: 10px;
+    }
+    &.frame-modal {
+        grid-template-columns: repeat(4, 1fr);
+        img {
+            border: 1px solid #ccc;
+        }
+    }
+    .frame-grid-item-image {
+        .btn-frame-image-remove {
+            opacity: 0;
+        }
+        &:hover {
+            .btn-frame-image-remove {
+                opacity: 1;
+            }
+        }
+    }
+}

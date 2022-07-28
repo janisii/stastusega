@@ -1,0 +1,13 @@
+.block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block>* {
+    flex: 1 1 calc(100%/6);
+}
+
+img.grid-item-image:hover {
+    cursor: pointer;
+    opacity: 0.95;
+}

@@ -1,0 +1,13 @@
+h1.site-title {
+    color: $color-primary;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.75em 0 .30em;
+    font-weight: 300;
+    @include media-breakpoint-down(md) {
+        font-size: 1em;
+        font-weight: 400;
+    }
+}
